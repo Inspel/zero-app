@@ -1,29 +1,16 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "target": "es6",
+    "target": "es2017",
     "module": "esnext",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "sourceMap": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "resolveJsonModule": true,
-    "baseUrl": ".",
-    "paths": {
-      "$/*": [
-        "src/modules/*"
-      ]
-    },
-    "plugins": [
-      {
-        "name": "typescript-plugin-css-modules"
-      }
-    ]
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",
-    ".config",
-    "modules"
   ]
 }

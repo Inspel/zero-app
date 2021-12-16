@@ -5,9 +5,10 @@
   "repository": "git@github.com:Inspel/zero-app.git",
   "author": "Inspel <bozhan89@gmail.com>",
   "license": "MIT",
+  "npmClient": "yarn",
   "scripts": {
-    "build": "webpack --node-env production --config .config/webpack/webpack.config.js",
-    "start": "webpack serve --node-env development --config .config/webpack/webpack.config.js"
+    "build": "lerna run build --stream",
+    "start": "lerna run start --stream"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.1",
@@ -37,6 +38,8 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "dotenv": "^9.0.0"
+    "dotenv": "^9.0.0",
+    "global": "^4.4.0",
+    "lerna": "^4.0.0"
   }
 }
